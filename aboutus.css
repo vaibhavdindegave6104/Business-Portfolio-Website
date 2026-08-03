@@ -1,0 +1,405 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding-top: 90px;
+}
+
+section {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Header section  */
+
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px none;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    color: #1a1d23;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 24px;
+}
+
+.logo h2 span {
+    color: #1a1d23;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* nav {
+    margin-left: 40px;
+} */
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold  ;
+    padding-right: 15px;
+
+}
+
+
+nav ul li a:hover {
+    color: blue;
+}
+
+
+
+
+
+/* Hero section  */
+.expertise-hero{
+    background: url("https://static.vecteezy.com/system/resources/previews/014/409/275/non_2x/abstract-technology-digital-futuristic-concept-glow-neon-colors-lines-with-lighting-effect-perspective-on-dark-blue-background-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 140px 20px ;
+}
+
+.expertise-hero h1{
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.expertise-hero h1 span{
+    color: #3b82f6;
+}
+
+.expertise-hero p{   
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* Intro section  */
+.intro{
+    background:  linear-gradient(#021655,#02185e);
+    background-size: cover;
+    background-position: center;
+    color: rgb(250, 248, 248);
+    text-align: center;
+    padding: 30px 20px ;
+    padding-top: 80px;
+     height: 55vh;
+}
+
+.intro h2{
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.intro h2 span{
+    color: #3b82f6;
+}
+
+.intro p{   
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* Our Mission  */
+.mission-vision{
+    background: linear-gradient(#021655,#02185e);
+    padding: 80px 0;
+}
+
+.mission-vision .container{
+    display: grid;
+    grid-template-columns: repeat (auto-fit,minmax(320px,1fr));
+    gap: 30px;
+}
+
+.mission-card,.vision-card{
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba (0,0,0,.08);
+}
+
+.mission-card:hover,.vision-card:hover{
+    transform: translateY(-8px);
+    background: #3b82f6;
+}
+    
+.mission-card h2,.vision-card h2{
+    color: #1a1d23;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.mission-card p, .vision-card p{
+    color: #050505;
+    line-height: 1.8;
+}
+
+
+
+
+
+/* Why choose us  */
+.why-us{
+    padding: 80px 0;
+     background: linear-gradient(#021655,#02185e);
+    text-align: center;
+}
+
+.why-us h2{
+    font-size: 38px;
+    color:#fafbfd;
+    margin-bottom: 50px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat (auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.why-card{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba (0,0,0,.08);
+    transition: 0.3s;
+}
+
+.why-card:hover{
+    transform: translateY(-8px);
+    background: #3b82f6;
+}
+
+.why-card i{
+    font-size: 40px;
+    color: #3b82f6;
+    margin-bottom: 15px;
+}
+
+.why-card:hover i{
+    color: #faf9f9;
+}
+
+.why-card:hover h3{
+    color: white;
+}
+
+.why-card:hover p{
+    color: white;
+}
+
+
+.why-card h3{
+    color: #070707;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.why-card p{
+    color: #030303;
+    line-height: 1.7;
+}
+
+
+
+
+
+/* stats section  */
+
+.stats {
+    padding: 80px 0;
+    text-align: center;
+    background:  linear-gradient(#021655,#02185e);
+}
+
+.stats h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.stats p {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    padding-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background: #3b82f6;
+     color: white;
+}
+
+.stat-card:hover h3{
+     color: white;
+}
+
+.stat-card:hover p{
+     color: white;
+}
+
+.counter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a1d23;
+    margin-bottom: 10px;
+}
+
+
+
+
+ /* call to action section   */
+.blog-cta{
+ background:  linear-gradient(#021655,#02185e);
+ color: #fffdfd;
+ text-align: center;
+ padding: 80px 20px;
+}
+
+.blog-cta h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.blog-cta p{
+    max-width: 700px;
+    margin: 0 auto ;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.cta-btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background:#fdfdfd;
+    color: #050505;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+
+}
+
+.cta-btn:hover{
+    background: #3b82f6;
+    color: #f7f8f8;
+}
+
+
+
+
+/* Footer section  */
+
+footer {
+    background: #1a1d23;
+    color: white;
+    padding: 50px 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box {
+    width: 220px;
+}
+
+.footer-box h2 {
+    margin-bottom: 15px;
+    color: #0d6efd;
+}
+
+.footer-box p {
+    margin: 10px 0;
+}
+
+.footer-box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.footer-box a:hover {
+    color: #0d6efd;
+}
+
+hr {
+    margin: 30px 0 15px;
+}
+
+.copyright {
+    text-align: center;
+}
